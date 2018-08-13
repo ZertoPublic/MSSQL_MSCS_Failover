@@ -3,8 +3,8 @@ This script is an example script and is not supported under any Zerto support pr
 
 In no event shall Zerto, its authors or anyone else involved in the creation, production or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or the inability to use the sample scripts or documentation, even if the author or Zerto has been advised of the possibility of such damages. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you.
 
-# Automating protection for MSCS Clusters when role owner changes
-This script is designed for MSCS clusters using shared RDMs where both the active and passive nodes are protected in their own VPGs. The active node VPG replicating while the passive node VPG is paused. When the Active node changes this script will alter the replicating/paused VPGs
+# Automating protection for MSSQL MSCS Clusters when role owner changes
+This script is designed for MSSQL MSCS clusters using shared RDMs where both the active and passive nodes are protected in their own VPGs. The active node VPG replicating while the passive node VPG is paused. When the Active node changes this script will alter the replicating/paused VPGs
 
 # Getting Started
 Instructions coming soon.
