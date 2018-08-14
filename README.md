@@ -7,7 +7,8 @@ In no event shall Zerto, its authors or anyone else involved in the creation, pr
 This script is designed for MSSQL MSCS clusters using shared RDMs where both the active and passive nodes are protected in their own VPGs. The active node VPG replicating while the passive node VPG is paused. When the Active node changes this script will alter the replicating/paused VPGs
 
 # Getting Started
-Instructions coming soon.
+The first step to utilizing this script is to create two VPGs. One protecting the current active node only and a second protecting the current passive node only. 
+The script should then be scheduled to be run directly on both SQL nodes every 1 minute. Its purpose is to check the active SQL node is the node protected by Zerto and automatically perform a force-sync if this is ever changed. The script will pause the VPG if the database is in an inconsistent state to clearly indicate the VPG can no longer be failed over until a force-sync has been performed. 
 
 # Prerequisities
 ## Environment Requirements:
