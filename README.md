@@ -11,7 +11,7 @@ The first step to utilizing this script is to create two VPGs. One protecting th
 
 The script should then be scheduled to be run directly on both SQL nodes every 1 minute. Its purpose is to check the active SQL node is the node protected by Zerto and automatically perform a force-sync if this is ever changed. The script will pause the VPG if the database is in an inconsistent state to clearly indicate the VPG can no longer be failed over until a force-sync has been performed. 
 
-# Prerequisities
+# Prerequisites
 ## Environment Requirements:
 
 - PowerCLI 5.5+
