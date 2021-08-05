@@ -19,6 +19,8 @@ The script should then be scheduled to be run directly on both SQL nodes every 1
 - ZVR 6.0u2
 - Failoverclusters PowerShell Module
 
+- v2 script - requires Zerto.ZVM.Commandlets module from Powershell Gallery, which requires Powershell 6.1+
+
 ## In-Script Variables:
 
 - Cluster Node 1 Name
@@ -33,3 +35,5 @@ The script should then be scheduled to be run directly on both SQL nodes every 1
 Once the necessary requirements have been completed select an appropriate host to run the script from. To run the script type the following from the directory the script is located in:
 
 .\MSSQL_MSCS_Failover.ps1
+
+v2 script - .\mssql_mscs_failover_v2.ps1
