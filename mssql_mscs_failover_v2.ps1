@@ -78,7 +78,7 @@ elseif ($activeNode -eq $SQLNode2Name)
 
     if ($vpg2.SubStatus -eq 'ReplicationPausedUserInitiated')
     {
-        Write-Host "Resuming " $vpg1.VpgName
+        Write-Host "Resuming " $vpg2.VpgName
         Start-ZvmVpgResume -VpgId $vpg2.VpgIdentifier
         Start-Sleep 10
         Write-Host "Force Syncing"
